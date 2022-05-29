@@ -1,0 +1,153 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+:root {
+    --cor1: #228782;
+    --cor2: #25527B;
+    --cor3: #222C2A;
+    --font1: 'Raleway', sans-serif;
+    --fontcor1: white;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font1);
+    font-weight: 300;
+    font-size: 1.3125rem;
+    line-height: 1.5;
+}
+
+.central {
+    text-align: center;
+}
+
+.texto {
+    max-width: 53rem;
+}
+
+header, section {
+    padding: 2.5rem 0;
+}
+
+@media (min-width: 40em) {
+    header, section {
+        padding: 2.5rem 0;
+    }
+}
+
+.container {
+    margin-inline: auto;
+    width: 100%;
+    width: min(90%, 70.5rem);
+}
+
+h1, h2 {
+    line-height: 1.1;
+}
+
+h1, h2, p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.claro {
+    background-color: var(--cor1);
+}
+
+.escuro {
+    color: var(--fontcor1);
+    background-color: var(--cor2);
+}
+
+.divisao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 40em) {
+    .divisao {
+        flex-direction: row;
+    }
+
+    .divisao > * {
+        flex-basis: 100%;
+    }
+
+    .divisao > * + * {
+        margin-left: 5em;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+footer {
+    background-color: black;
+}
+
+.preto {
+    width: 100%;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.teste {
+    fill: white;
+    transition: .2s;
+    padding-left: 10px;
+}
+
+.teste:hover {
+    cursor: pointer;
+    fill: #228782;
+}
+
+.creditos {
+    font-size: 1.2rem;
+    color: white;
+    padding-bottom: .8rem;
+    margin: 0 2rem;
+}
+
+.ultimo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ultimo > h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.ultimo > p {
+    font-size: 1.8rem;
+
+}
+
+.postit1 {
+    max-width: 40%;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postit2 {
+    max-width: 30%;
+}
+
+.icone {
+    margin-top: 1em;
+}
